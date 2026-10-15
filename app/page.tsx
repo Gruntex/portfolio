@@ -193,7 +193,7 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
   const validColors = ["cyan", "fuchsia", "purple", "yellow"] as const;
   
   // Runtime validation: default to "cyan" if an invalid color is provided
-  const safeColor = validColors.includes(color) ? color : "accent";
+  const safeColor = validColors.includes(color) ? color : "cyan";
 
   const colorClasses = {
     cyan: "group-hover:border-accent group-hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]",
@@ -203,7 +203,7 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
   };
 
   const textColors = {
-    cyan: "group-hover:text-accent",
+    cyan: "group-hover:text-cyan-400",
     fuchsia: "group-hover:text-fuchsia-400",
     purple: "group-hover:text-purple-400",
     yellow: "group-hover:text-yellow-400",
