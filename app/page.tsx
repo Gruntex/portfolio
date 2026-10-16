@@ -117,12 +117,12 @@ export default function Home() {
               {/* Scanline effect */}
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(236, 200, 100, 0.05)_1px,transparent_1px)] bg-[size:100%_4px] z-20 pointer-events-none" />
               
-              <Image 
-                src={`${basePath}/ProfilePicture.jpg`}
-                alt="Profile"
-                fill
-                className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
-              />
+            <Image
+              src="/ProfilePicture.jpg"
+              alt="Profile"
+              fill
+              className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+            />
             </div>
           </div>
           <div className="md:col-span-8 space-y-8 text-foreground leading-relaxed font-light">
